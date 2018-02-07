@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joguinho</title>
+</head>
+<body ng-app="jogo">
+
+    <section class="personagem">
+
+        <img src="astronautaP.png" class="fala" width="20%" height="100%">
+
+        <div class="balao">
+            <p></p>
+        </div>
+    
+
+    </section>
+    
+    <section class="tabuleiro" ng-controller="QuadradosController">
+        <div class="square"
+            ng-repeat="quadrado in quadrados"
+            ng-click="ativar(quadrado)"
+            ng-click="finalizarPartida()"
+            ng-class="quadrado.classe">{{ quadrado.id }}</div>
+
+            <div ng-show="escolha" class="escolha">
+                <h5>Escolha sua opção:</h5><br>
+                <div class="opcao x" id="opcao1" ng-click="escolherJogada('x')"></div>
+                <div class="opcao o" id="opcao2" ng-click="escolherJogada('o')"></div>
+            </div>
+
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

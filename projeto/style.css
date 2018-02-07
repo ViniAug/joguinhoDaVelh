@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+/* tag's */
+
+p{
+    width: 100%;
+    color: black;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+h5{
+    margin-top: 30px;
+}
+
+/* classes */
+
+.tabuleiro{
+    margin: 0px 0px 0px 35%;
+    width: 320px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.square.ativo{
+    background-color: rgb(172, 239, 216);
+}
+
+.x{
+    background-size: 100%;
+    background-image: url('xis.png');
+}
+
+.o{
+    background-size: 100%;
+    background-image: url('circulo.png');
+}
+
+.personagem{
+    /* background-color: rgba(110, 75, 75, 0.479); */
+    width: 100%;
+    height: 200px;
+}
+
+.BF{
+    display: none;
+}
+
+.fala{
+    margin-left: 250px;
+}
+
+.balao{
+    margin-top: 20px;
+    margin-right: 250px;
+    float: right;
+    width: 40%;
+    height: 150px;
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+}
+
+.escolha{
+    margin-top: 20px;
+    width: 95%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.opcao{
+    margin-top: 20px;
+    width: 47%;
+    height: 75%;
+    border: 1px solid black;
+}
+
+/* Id's */
+
+#opcao2{
+    float: right;
+    
+}
